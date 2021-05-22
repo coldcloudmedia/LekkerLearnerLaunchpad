@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89305aa391d1c5141bbe1628d930a2c5, type: 3}
+  m_Name: TutorialsTOC
+  m_EditorClassIdentifier: 
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
+  BackgroundImage: {fileID: 0}
+  Title:
+    m_Untranslated: Title
+  Subtitle:
+    m_Untranslated: Subtitle
+  Description:
+    m_Untranslated: 
+  ProjectLayout: {fileID: 0}
+  Sections:
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Tutorial title
+    Text:
+      m_Untranslated: Tutorial description
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: e1c274243c4c1154fa396cfee6604338, type: 2}
+  - OrderInView: 2
+    Heading:
+      m_Untranslated: Tutorial title
+    Text:
+      m_Untranslated: Tutorial description
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: d60e43d4b98dc4041b9e5c9ad718e9a3, type: 2}
+  - OrderInView: 4
+    Heading:
+      m_Untranslated: Tutorial 3
+    Text:
+      m_Untranslated: Tutorial description
+    Metadata: 
+    Url: 
+    Image: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+    Tutorial: {fileID: 11400000, guid: a71e1213d3d1bf645b1caabd0e89f7e8, type: 2}
