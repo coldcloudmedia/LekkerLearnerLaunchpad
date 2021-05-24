@@ -12,6 +12,9 @@ namespace com.coldcloudmedia
         [SerializeField]
         private ShootingSpeed shootingSpeed;
 
+        [SerializeField]
+        private float projectileLifeInSeconds;
+
         void Update()
         {
             if (Input.GetButtonDown("Fire1")){
@@ -20,8 +23,16 @@ namespace com.coldcloudmedia
                 projectile.tag = Tags.BULLET_TAG;
                 projectile.transform.position = transform.position;
                 Rigidbody rigidbody = projectile.GetComponent<Rigidbody>();
-                rigidbody.AddForce(transform.forward * shootingSpeed.GetSpeedValue() * Time.deltaTime, ForceMode.Impulse);
+                rigidbody.AddForce(transform.forward * shootingSpeed.GetSpeedValue(), ForceMode.Impulse);
+
+                StartCoroutine(killProjectile(projectile));
             }            
+        }
+
+        private IEnumerator killProjectile(GameObject projectile)
+        {
+            yield return new WaitForSeconds(projectileLifeInSeconds);
+            Destroy(projectile);
         }
     }
 }

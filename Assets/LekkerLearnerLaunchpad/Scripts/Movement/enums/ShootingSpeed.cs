@@ -16,15 +16,15 @@ namespace com.coldcloudmedia
             switch (movementSpeed)
             {
                 case ShootingSpeed.EXTRA_SLOW:
-                    return 5000;
+                    return 10;
                 case ShootingSpeed.SLOW:
-                    return 10000;
+                    return 50;
                 case ShootingSpeed.MEDIUM:
-                    return 20000;
+                    return 100;
                 case ShootingSpeed.FAST:
-                    return 40000;
+                    return 200;
                 case ShootingSpeed.FASTEST:
-                    return 80000;
+                    return 400;
                 default:
                     return 0;
             }
